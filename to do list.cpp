@@ -19,7 +19,6 @@ struct list data[100];
 bool Add_in_file(string name,string description, string Date)
 {
 
-
    if (listSize < 101)
    {
       list y = { name,description, Date };
@@ -51,7 +50,6 @@ void Show_file()
       cout << "" << endl;
    }
 }
-
 void Delete(int x)
 {
 	ofstream file_open("To_Do_list.txt",ios::app);
@@ -108,4 +106,3 @@ int main()
    }
    return 0;
 }
-
